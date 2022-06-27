@@ -1,0 +1,54 @@
+//Полоса с новостями
+
+.new {
+	margin: 0;
+	overflow: hidden;
+	min-width: 100%;
+	.new__body {
+		width: 200%;
+		display: flex;
+		animation: new 14s linear infinite;
+		padding: 12px 0;
+		background-color: #DB1A1A;
+
+		@media(min-width: 75em){
+			padding: 1rem 0;
+		}
+		.new__text {
+			white-space: nowrap;
+			width: 100%;
+			color: #fff;
+			@media(min-width: 75em){
+				font-size: 1.2rem;
+			}
+		 }
+		 .new__link {
+			text-decoration: underline;
+			color: #fff;
+			font-size: 0.75rem;
+			line-height: 0.875rem;
+			letter-spacing: 0.05em;
+			color: #FFFFFF;
+			text-transform: uppercase;
+		 }
+	 
+	 }
+}
+
+@keyframes new {
+	0% {
+	  transform: translate(100%);
+	}
+	100% {
+	  transform: translate(-100%);
+	}
+}
+
+@keyframes new {
+	0% {
+	  transform: translate(0%);
+	}
+	100% {
+	  transform: translate(-50%);
+	}
+}

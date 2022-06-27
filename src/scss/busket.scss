@@ -1,0 +1,453 @@
+.busket{
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #626262;
+	max-width: 100%;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s ease-in-out;
+	z-index: 2000;
+	.busket__container{
+		.busket__body{
+
+			@media(min-width: 75em){
+				align-content: center;
+				justify-content: center;
+				display: none;
+				padding: 0 100px;
+				background-color: #fff;
+				max-width: 100%;
+				max-height: 100%;
+				margin: 20px 0;
+			}
+			.busket__header{
+
+				@media(min-width: 75em){
+					border-bottom: 1px solid #878787;
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					align-items: center;
+					padding: 30px 0;
+				}
+				.busket__title{
+					font-weight: 500;
+					font-size: 1.875rem;
+					line-height: 2.25rem;
+					text-transform: uppercase;
+					color: #1d1d1d;
+
+					@media(min-width: 75em){
+						font-weight: 500;
+						font-size: 3.75rem;
+						line-height: 4.5rem;
+						text-transform: uppercase;
+						color: #1d1d1d;
+					}
+				}
+
+				.busket__close{
+					font-weight: 400;
+					font-size: 1.6rem;
+					line-height: 0.75rem;
+					text-decoration-line: underline;
+					text-transform: uppercase;
+
+					@media(min-width: 75em){
+						text-decoration-line: underline;
+						text-transform: uppercase;
+						font-weight: 400;
+						font-size: 1rem;
+						line-height: 2rem;
+						color: #1d1d1d;
+						cursor: pointer;
+					}
+				}
+			}
+
+			.busket__main{
+
+				@media(min-width: 75em){
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+				}
+				.busket__form{
+
+					@media(min-width: 75em){
+						border-right: 1px solid #878787;
+						width: 50%;
+						padding-right: 100px;
+					}
+					.busket__wrapper{
+
+						@media(min-width: 75em){
+							display: flex;
+							flex-direction: column;
+							padding: 40px 0;
+						}
+						.busket__demand{
+							font-weight: 400;
+							font-size: 1.5625rem;
+							line-height: 1.875rem;
+							text-transform: uppercase;
+
+							@media(min-width: 75em){
+								font-weight: 400;
+								font-size: 1.5rem;
+								line-height: 2rem;
+								text-transform: uppercase;
+								max-width: 100%;
+								margin-bottom: 30px;
+								color: #1d1d1d;
+							}
+						}
+
+						.busket__form-body{
+
+							@media(min-width: 75em){
+								display: flex;
+								flex-direction: column;
+							}
+							.busket__form-name{
+								border: 1px solid #878787;
+								padding: 1.25em;
+
+								@media(min-width: 75em){
+									border: 1px solid #878787;
+									padding: 20px;
+									margin-bottom: 1rem;
+								}
+							}
+						}
+
+						.busket__form-surname{
+							border: 1px solid #878787;
+							padding: 1.25em;
+
+							@media(min-width: 75em){
+								border: 1px solid #878787;
+								padding: 20px;
+								margin-bottom: 1rem;
+							}
+						}
+
+						.busket__form-phone{
+							border: 1px solid #878787;
+							padding: 1.25em;
+
+							@media(min-width: 75em){
+								border: 1px solid #878787;
+								padding: 20px;
+								margin-bottom: 1rem;
+							}
+						}
+
+						.busket__form-delivery{
+							border-bottom: 1px solid #878787;
+							padding: 0.5em 1.25em 0.5em 0;
+
+							@media(min-width: 75em){
+								border-bottom: 1px solid #878787;
+								padding: 20px 20px 5px 0;
+							}
+						}
+
+						.busket__buttoms{
+
+							@media(min-width: 75em){
+								display: flex;
+								flex-direction: row;
+								justify-content: space-between;
+								padding: 1rem 0;
+							}
+							.busket__form-cash{
+								display: block;
+								font-weight: 400;
+								font-size: 1.25rem;
+								line-height: 1.5625rem;
+								padding: 1.25rem 0;
+								border: 1px solid #1d1d1d;
+								background: none;
+								width: 100%;
+
+								@media(min-width: 75em){
+									/*display: block;*/
+									border: 1px solid #878787;
+									background: none;
+									padding: 5px 0;
+									font-weight: 300;
+									font-size: 1.2rem;
+									line-height: 1.4em;
+									width: 48%;
+									color: #1d1d1d;
+								}
+							}
+
+							.busket__form-card{
+								display: block;
+								font-weight: 400;
+								font-size: 1.25rem;
+								line-height: 1.5625rem;
+								padding: 1.25rem 0;
+								border: 1px solid #1d1d1d;
+								background: none;
+								width: 100%;
+
+								@media(min-width: 75em){
+									/*display: block;*/
+									border: 1px solid #878787;
+									background: none;
+									padding: 5px 0;
+									font-weight: 300;
+									font-size: 1.2rem;
+									line-height: 1.4em;
+									width: 48%;
+									color: #1d1d1d;
+								}
+							}
+						}
+
+						.busket__ag{
+
+							@media(min-width: 75em){
+								display: flex;
+								flex-direction: row;
+								justify-content: space-between;
+							}
+							.basket__form-checkbox{
+								width: 1.5rem;
+								height: 1.5rem;
+								border: 1px solid #1d1d1d;
+
+								@media(min-width: 75em){
+
+								}
+							}
+
+							.busket__form-label{
+								font-weight: 400;
+								font-size: 0.7rem;
+								line-height: 1.125rem;
+								text-transform: uppercase;
+
+								@media(min-width: 75em){
+									max-width: 95%;
+									font-size: 0.8rem;
+									white-space: nowrap;
+									color: #1d1d1d;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			.busket__info{
+
+				@media(min-width: 75em){
+					width: 50%;
+					padding: 30px 0 0 30px;
+				}
+				.busket__item-body{
+
+					@media(min-width: 75em){
+						max-height: 300px;
+						border: 1px solid #878787;
+					}
+					.busket__item{
+
+						@media(min-width: 75em){
+							padding: 20px;
+							border-bottom: 1px solid #878787;
+						
+						}
+						.busket__item-art{
+
+							@media(min-width: 75em){
+								display: flex;
+								flex-direction: row;
+								justify-content: space-between;
+								
+							}
+
+							.info__img{
+
+								@media(min-width: 75em){
+									position: relative;
+									max-width: 100px;
+									max-height: 100px;
+								}
+								.info__img-item{
+
+									@media(min-width: 75em){
+										max-width: 100%;
+										max-height: 100%;
+										object-fit: cover;
+									}
+								}
+							}
+
+							.info__about{
+
+								@media(min-width: 75em){
+									display: flex;
+									flex-direction: column;
+									justify-content: space-between;
+								}
+								.info__text{
+
+									@media(min-width: 75em){
+										display: flex;
+										flex-direction: column;
+									}
+								}
+								.info__title{
+
+									@media(min-width: 75em){
+										font-weight: 600;
+										font-size: 1rem;
+										line-height: 1.125rem;
+										margin-bottom: 10px;
+										color: #1D1D1D;
+										text-transform: uppercase;
+									}
+								}
+								.info__subtitle{
+
+									@media(min-width: 75em){
+										font-weight: 300;
+										font-size: 1rem;
+										line-height: 1.125rem;
+										margin-bottom: 5px;
+										color: #1D1D1D;
+									}
+								}
+								.info__thrust{
+									font-size: 0.8rem;
+									line-height: 1.125rem;
+									margin-bottom: 5px;
+									color: #1d1d1d;
+								}
+							}
+
+							.info__block{
+
+								@media(min-width: 75em){
+									display: flex;
+									flex-direction: column;
+									justify-content: space-between;
+									align-items: flex-end;
+								}
+								.info__delete{
+
+									@media(min-width: 75em){
+										text-decoration-line: underline;
+										text-transform: uppercase;
+										font-size: 0.8rem;
+										cursor: pointer;
+									}
+								}
+								.info__price-item{
+
+									@media(min-width: 75em){
+										font-weight: 600;
+										font-size: 1rem;
+										line-height: 1.5rem;
+									}
+								}
+							}
+						}
+					}
+
+					.busket__item:last-child {
+						border: none
+					}
+
+					
+				}
+
+				.busket__delivery-free{
+
+					@media(min-width: 75em){
+						margin-top: 30px;
+						display: flex;
+						flex-direction: row;
+						justify-content: space-between;
+						border: 1px solid #878787;
+						padding: 1rem 1.875rem;
+						align-items: center;
+					}
+					.busket__delivery-title{
+						font-weight: 300;
+						font-size: 1rem;
+						line-height: 1.125rem;
+						color: #1D1D1D;
+					}
+
+					.busket__delivery-subtitle{
+						font-weight: 600;
+						font-size: 1rem;
+						line-height: 1.125rem;
+
+						@media(min-width: 75em){
+							font-weight: 600;
+							font-size: 1.2rem;
+							line-height: 1rem;
+						}
+					}
+				}
+
+				.busket__price-info{
+
+					@media(min-width: 75em){
+						margin-top: 30px;
+						display: flex;
+						flex-direction: row;
+						justify-content: space-between;
+						align-items: center;
+					}
+					.busket__price-title{
+						font-size: 1rem;
+						line-height: 1.125rem;
+
+						@media(min-width: 75em){
+							font-size: 1rem;
+							line-height: 1rem;
+						}
+					}
+					.busket__price-subtitle{
+						font-weight: 600;
+						font-size: 1rem;
+						line-height: 1.125rem;
+
+						@media(min-width: 75em){
+							font-weight: 600;
+							font-size: 1rem;
+							line-height: 1rem;
+						}
+					}
+				}
+			}
+		}
+
+		.busket__body--visible {
+			
+			@media(min-width: 75em){
+				margin: 20px 0;
+				padding: 0 100px;
+				background-color: #fff;
+				display: block;
+			}
+		}
+	}
+}
+
+.busket--visible {
+	opacity: 1;
+	visibility: visible;
+	transition: all 0.3s ease-in-out;
+}

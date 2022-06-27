@@ -1,0 +1,119 @@
+/*--------------ANSWER------------------*/
+
+.answer {
+	margin: 40px 0 0 0;
+
+	@media(min-width: 75em){
+		margin: 100px 0 0 0;
+	}
+
+	.answer__container {
+		.answer__body{
+			.answer__mtitle {
+				margin: 0px 0px 15px 0px;
+				font-weight: 400;
+				font-size: 2rem;
+				line-height: 2.375remx;
+				color: var(--main-title-color);
+				max-width: 200px;
+				text-transform: uppercase;
+
+				@media(min-width: 75em){
+					font-size: 3.75rem;
+					line-height: 4.5rem;
+					max-width: 70%;
+				}
+			}
+			.answer__item {
+				margin: 0px 0 0 0;
+
+				.answer__title {
+					border-top: 1px solid #878787;
+					padding: 15px 0 15px 0;
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+
+					@media(min-width: 75em){
+						padding: 30px 0;;
+					}
+
+					.answer__title-main {
+						font-size: 1.25rem;
+						line-height: 1.5rem;
+						color: var(--main-title-color);
+						cursor: pointer;
+						max-width: 250px;
+
+						@media(min-width: 75em){
+							font-size: 1.875rem;
+							line-height: 2.25rem;
+							max-width: 100%;
+						}
+					}
+					
+					 .answer__plus {
+						cursor: pointer;
+					}
+				}
+				.answer__title_img{
+					border-bottom: 1px solid #878787;
+				}
+				.active{
+					border-bottom: none;
+					animation: actived 2s linear  infinite 0.3s;
+				}
+				.answer__list {
+					padding: 0 0 40px 0;
+					display: none;
+
+					.answer__text {
+						font-weight: 400;
+						font-size: 15px;
+						line-height: 18px;
+						color: var(--main-title-color);
+
+						@media(min-width: 75em){
+							font-size: 1.2rem;
+							line-height: 1.5rem;
+						}
+					}
+				}
+				.answer__list li:before{
+					content: '';
+					display: inline-block;
+					border-radius: 50%;
+					background-color: #1D1D1D;
+					width: 5px;
+					height: 5px;
+					margin: 0 10px 2.5px 0;
+				}
+			}
+			.answer__subtext {
+				font-weight: 400;
+				font-size: 15px;
+				line-height: 18px;
+				color: var(--main-title-color);
+				max-width: 1000px;
+				padding: 0 0 40px 0;
+				display: none;
+
+				@media(min-width: 75em){
+					font-size: 1.2rem;
+					line-height: 1.5rem;
+				}
+
+				.answer__sertificat {
+					margin: 40px 0 0 0;
+					max-width: 900px;
+					border: 1px solid #878787;
+					padding: 15px;
+
+					.answer__img{
+						max-width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
