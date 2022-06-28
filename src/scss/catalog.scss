@@ -1,18 +1,14 @@
 .main__catalog{
-	.catalog__container {
-		padding: 40px 0 0 0;
-
-		@media(min-width: 75em){
-			padding: 100px 0 0 0;
-		}
-
-		
-	}
-
-
-
+	margin: 0;
 	.catalog {
 		.catalog__container{
+			.catalog__title {
+				padding: 50px 0 0 0;
+				text-align: center;
+				@media(min-width: 75em){
+					padding: 50px 0;
+				}
+			}
 			.catalog__body {
 				display: grid;
 				grid-template: repeat(9, auto) / 1fr;
@@ -103,7 +99,7 @@
 							}
 							.item__button {
 								background: none;
-								border: 1px dashed #878787;
+								border: 1px solid #878787;
 								border-radius: 5px;
 								padding: 10px 22px;
 								color: var(--main-title-color);
@@ -131,6 +127,10 @@
 									opacity: 0.3;
 									pointer-events: none;
 								}
+							}
+
+							.item__button:disabled::after {
+								content: "товар в корзине";
 							}
 						}
 
