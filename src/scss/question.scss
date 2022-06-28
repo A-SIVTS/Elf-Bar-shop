@@ -9,20 +9,8 @@
 
 	.answer__container {
 		.answer__body{
-			.answer__mtitle {
-				margin: 0px 0px 15px 0px;
-				font-weight: 400;
-				font-size: 2rem;
-				line-height: 2.375remx;
-				color: var(--main-title-color);
-				max-width: 200px;
-				text-transform: uppercase;
-
-				@media(min-width: 75em){
-					font-size: 3.75rem;
-					line-height: 4.5rem;
-					max-width: 70%;
-				}
+			.answer__main-title {
+				margin-bottom: 1rem;
 			}
 			.answer__item {
 				margin: 0px 0 0 0;
@@ -68,8 +56,8 @@
 					display: none;
 
 					.answer__text {
-						font-weight: 400;
-						font-size: 15px;
+						font-weight: 300;
+						font-size: 1rem;
 						line-height: 18px;
 						color: var(--main-title-color);
 
@@ -90,8 +78,8 @@
 				}
 			}
 			.answer__subtext {
-				font-weight: 400;
-				font-size: 15px;
+				font-weight: 300;
+				font-size: 1rem;
 				line-height: 18px;
 				color: var(--main-title-color);
 				max-width: 1000px;

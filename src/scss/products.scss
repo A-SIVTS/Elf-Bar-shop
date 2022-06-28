@@ -99,9 +99,15 @@
 					 }
 				}
 
-				.products__title1500_right {
-
+				.products__link:hover {
+					background-color: var(--item-red-color);
+					border: 1px solid var(--item-red-color);
+					transition: all 0.3s ease-out;
 				}
+
+				
+
+				
 			}
 
 			
@@ -151,6 +157,12 @@
 				line-height: 4.5rem;
 				border-radius: 15px;
 			}
+		}
+
+		.products__button:hover {
+			background-color: #fff;
+			color: #1d1d1d;
+			transition: all 0.3s ease-in;
 		}
 	}
 }

@@ -11,7 +11,7 @@
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
-		//border-bottom: 1px solid #878787;
+
 		.header__logo {
 			order: 2;
 			z-index: 10;
@@ -38,7 +38,7 @@
 			display: none;
 
 			@media(min-width: 75em) {
-				color: #1d1d1d;
+				color: #fff;
 				padding: 0 60px 0 0;
 			}
 		 }
@@ -190,10 +190,7 @@
 	position: fixed;
 	left: 0;
 	top: 0;
-	animation: header--fixed 0.5s linear 1;
-	//background-color: rgba(219, 26, 26, 0.5);
-
-	
+	animation: header--fixed 0.5s linear 1;	
 }
 
 @keyframes header--fixed {
