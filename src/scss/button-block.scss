@@ -39,6 +39,14 @@
 					}
 
 				}
+
+				.button__arrow-dark {
+					display: none;
+
+					@media(min-width: 75em){
+						width: 30%; 
+					}
+				}
 			}
 			 .button__body:hover {
 				
@@ -48,7 +56,17 @@
 
 				.button__title {
 					color: #1d1d1d;
-					transition: all 0.3s ease-out;
+					transition: all 0.3s ease-in;
+				}
+
+				.button__arrow {
+					display: none;
+					position: relative;
+				}
+
+				.button__arrow-dark {
+					display: block;
+					
 				}
 			}
 		}

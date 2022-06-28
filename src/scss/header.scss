@@ -159,23 +159,28 @@
 		transform: translateX(0);
 	 }
 	.header__buskett {
-		padding: 20px 0 20px 20px;
+		padding: 20px 0 20px 0;
 		order: 3;
 		z-index: 10;
 		position: relative;
+		cursor: pointer;
 
 		@media(min-width: 75em) {
 			padding: 20px 0 20px 0;
 			border: none;
-			cursor: pointer;
+			
 		}
 
 		.busket__quantity {
 			color: var(--main-title-color);
 			position: absolute;
-			top: 50%;
+			top: 49%;
 			left: 50%;
 			transform: translate(-50%, -20%);
+		}
+
+		@media(min-width: 75em){
+
 		}
 	}
 	}
